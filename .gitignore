@@ -1,0 +1,9 @@
+/logs/
+/data/
+/build/
+/src/notebooks/
+/.ipynb_checkpoints/
+/.idea
+/venv/
+/src/dist/
+/src/build/

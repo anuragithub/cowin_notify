@@ -1,0 +1,12 @@
+.PHONY: help
+help:
+	make --help
+
+.PHONY: build_package
+build_package:
+	cd ./src && python setup.py bdist_wheel
+
+.PHONY: build_docker_run
+build_docker_run:
+	docker build -t airflow .
+	docker-compose -f docker-compose.yml up
